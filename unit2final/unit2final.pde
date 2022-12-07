@@ -136,7 +136,7 @@ void bullets(){
       bullet(); // Create a new bullet with each UP key
       boolean delete = deleteAliens();
       if (delete){
-        break; /* You have to find a replacement for this because moveY = 78; ends the loop but, never statisifies it again since 78 >= 95 will never be true
+        break; /*ends the loop but, never statisifies it again since 78 >= 95 will never be true
                   I mean that is if you want continous bullets*/
       }
       moveY = moveY - 1; // Increment to move the bullet up the screen
